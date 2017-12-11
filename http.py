@@ -38,7 +38,7 @@ while True:
     creatinglog(addresses)
     request = connection.recv(4096)
 
-    if ('GET' in request) and ('HTTP/1.1' in request):
+    if ('GET' in request) and (('HTTP/1.1' in request) or ('HTTP/1.0' in request)):
 
         savingrequest(request)
 
