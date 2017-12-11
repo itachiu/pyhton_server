@@ -25,7 +25,7 @@ serve = header+index.read()
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-sock.bind(('192.168.0.7',80))
+sock.bind(('127.0.0.1',80))
 
 sock.listen(5)
 
