@@ -1,5 +1,9 @@
 import socket
 import time
+import os
+import threading
+
+ip = socket.gethostbyname(socket.gethostname())
 
 def creatinglog(ipadres):
 
@@ -25,7 +29,7 @@ serve = header+index.read()
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-sock.bind(('127.0.0.1',80))
+sock.bind(("127.0.0.1",80))
 
 sock.listen(5)
 
